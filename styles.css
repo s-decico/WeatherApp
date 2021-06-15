@@ -11,7 +11,7 @@ body {
   background-position: center;
   background-repeat: repeat-y invert;
   background-size: auto;
-  min-width: 400px;
+  min-width: 320px;
   max-width: 2160px;
 }
 
@@ -557,3 +557,9 @@ Cloud Card starts
     -o-transition: 0.3s ease-in-out;
   }
 }
+
+@media (max-width: 370px) {
+    .logo {
+      margin-left: -6.4rem;
+    }
+  }
