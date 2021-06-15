@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Baloo+Tammudu+2:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">WeatherApp</div>
+        <a href="#" class="ham">
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+        </a>
+        <div class="navbarlink">
+          <ul>
+            <li><a href="#" class="navlinks">Home</a></li>
+            <li><a href="#" class="navlinks">Contact Us</a></li>
+            <li><a href="#" class="navlinks">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="info">
+      <div class="weather">
+        <div class="weathercard location"><div id="loc"></div></div>
+        <div class="weathercard time">
+          <div id="datetime"></div>
+        </div>
+        <div class="weathercard condition"><div id="cond"></div></div>
+        <div class="weathercard feels">
+          <div class="transbox">
+            <div id="feel"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="temp">
+        <div class="labeltemp">Feels Like</div>
+        <div class="acttemp"><div id="acttemp"></div></div>
+        <div class="labeltemp">Maximum Temperature</div>
+        <div class="mintemp"><div id="mintemp"></div></div>
+        <div class="labeltemp">Minimum Temperature</div>
+        <div class="maxtemp"><div id="maxtemp"></div></div>
+      </div>
+
+      <div class="cloud">
+        <div class="transbox">
+          <div class="labelcloud">Cloudiness</div>
+          <div class="cloudiness"><div id="cloudiness"></div></div>
+          <div class="labelcloud">Humidity</div>
+          <div class="humidity"><div id="humidity"></div></div>
+          <div class="labelcloud">Pressure</div>
+          <div class="pressure"><div id="pressure"></div></div>
+        </div>
+      </div>
+
+      <div class="wind">
+        <div class="windspd" id="wind"></div>
+        <div class="winddir" id="winddir"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

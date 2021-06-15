@@ -1,0 +1,559 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/2844240.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: repeat-y invert;
+  background-size: auto;
+  min-width: 400px;
+  max-width: 2160px;
+}
+
+.logo {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  background-color: rgba(137, 73, 197, 0.7);
+  /*min-height: 4rem;*/
+  height: auto;
+  align-items: center;
+  margin: 0.3rem;
+}
+
+.ham {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+  width: 40px;
+  display: none;
+  justify-content: space-between;
+  margin-top: 2rem;
+  right: 2rem;
+}
+
+.ham .ham-bar {
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+button a {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  /*width: 34rem;*/
+  padding-right: 1rem;
+  list-style: none;
+  width: 100%;
+}
+
+ul li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  font-family: "Work Sans", sans-serif;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease-in-out;
+  -webkit-transition: 0.1s ease-in-out;
+  -moz-transition: 0.1s ease-in-out;
+  -ms-transition: 0.1s ease-in-out;
+  -o-transition: 0.1s ease-in-out;
+}
+
+/*
+a.navlinks {
+  position: relative;
+}
+
+a.navlinks:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.navlinks:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+*/
+
+/*
+Index Page
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+.searchbox {
+  margin-top: 4rem;
+  height: 300px;
+  width: 650px;
+  background-color: rgba(208, 149, 231, 0.6);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.headtxt {
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(137, 73, 197);
+  border-radius: 1rem 1rem 0rem 0rem;
+  -webkit-border-radius: 1rem 1rem 0rem 0rem;
+  -moz-border-radius: 1rem 1rem 0rem 0rem;
+  -ms-border-radius: 1rem 1rem 0rem 0rem;
+  -o-border-radius: 1rem 1rem 0rem 0rem;
+  text-align: center;
+  padding-top: 0.9rem;
+  color: rgb(255, 255, 255);
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+}
+
+#citybox {
+  margin-left: 2.18rem;
+  margin-top: 4.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border: 0.3rem solid rgb(137, 73, 197);
+  font-size: 2rem;
+  outline: none;
+}
+
+.searchbtn {
+  margin-top: 4.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border: 0.3rem solid rgb(137, 73, 197);
+  font-size: 2rem;
+  transition-timing-function: ease;
+  transition: 0.3s;
+}
+
+.searchbtn:hover {
+  background-color: rgb(137, 73, 197);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/*
+Index page ends
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+/*
+Weather page starts
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+/* Main card Layout */
+
+.info {
+  width: 900px;
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 35rem;
+  /*margin-top: 14px;
+  margin-left: 239px;
+  margin-right: 239px;*/
+  margin: 0 auto;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 250px 250px;
+  grid-gap: 20px;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Baloo Tammudu 2", cursive;
+}
+
+/* Info subcards  */
+
+/*Weather Card starts
+-------------------------------------------------
+*/
+.weather {
+  grid-column: span 4;
+  grid-row: span 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 110px 110px;
+  grid-gap: 10px;
+  /*background-image: url("./images/sunny-day.jpg");*/
+  border-radius: 1rem;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.weathercard {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  font-family: "Baloo Tammudu 2", cursive;
+}
+/*Weather subcards
+--------------------------------------------------------------------------------
+*/
+.location {
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.time {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+}
+
+.condition {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+}
+
+.feels {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+}
+/*Weather card ends
+----------------------------------------------------------------------------------
+*/
+
+.temp {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.labeltemp {
+  flex-grow: 1;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 8px;
+}
+.acttemp,
+.mintemp,
+.maxtemp {
+  flex-grow: 2;
+}
+
+/*
+Wind Card starts
+------------------------------------------------------------------------------------------------------------------
+*/
+
+.wind {
+  grid-column: span 2;
+  grid-row: span 1;
+  background-image: url("./images/Wind.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.windspd {
+  flex-grow: 2;
+  padding-top: 30px;
+  width: 100%;
+  background-color: rgba(28, 112, 70, 0.65);
+  border-radius: 1rem 1rem 0rem 0rem;
+  -webkit-border-radius: 1rem 1rem 0rem 0rem;
+  -moz-border-radius: 1rem 1rem 0rem 0rem;
+  -ms-border-radius: 1rem 1rem 0rem 0rem;
+  -o-border-radius: 1rem 1rem 0rem 0rem;
+  display: block;
+  text-align: center;
+}
+
+.winddir {
+  width: 100%;
+  padding-top: 30px;
+  background-color: rgba(35, 123, 149, 0.65);
+  border-radius: 1rem;
+  flex-grow: 2;
+  -webkit-border-radius: 0rem 0rem 1rem 1rem;
+  -moz-border-radius: 0rem 0rem 1rem 1rem;
+  -ms-border-radius: 0rem 0rem 1rem 1rem;
+  -o-border-radius: 0rem 0rem 1rem 1rem;
+}
+
+/*
+Cloud Card starts
+------------------------------------------------------------------------------------------------------------------
+*/
+
+.cloud {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-image: url("./images/Clouds.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.05 rem;
+  color: white;
+}
+
+.labelcloud {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  text-align: center;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  padding-top: 8px;
+}
+
+.cloudiness,
+.humidity,
+.pressure {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.transbox {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+@media (max-width: 920px) {
+  body {
+    background-size: auto;
+    background-image: url("./images/mobilebgg.jpg");
+  }
+
+  .info {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .weather {
+    grid-column: span 2;
+    grid-row: span 1;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .temp,
+  .cloud {
+    grid-column: span 1;
+  }
+  .wind {
+    grid-column: span 2;
+  }
+
+  #loc,
+  #datetime,
+  #cond,
+  #feel {
+    padding-top: 25px;
+  }
+
+  .temp {
+    margin-left: 10px;
+    margin-right: -10px;
+  }
+
+  .cloud,
+  .wind {
+    margin-left: 10px;
+  }
+  .cloud,
+  .wind {
+    margin-right: 10px;
+  }
+  .wind,
+  .winddir {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .labelcloud {
+    padding-top: 5px;
+    padding-bottom: 0px;
+  }
+
+  .location,
+  .time,
+  .condition,
+  .feels {
+    font-size: clamp(1rem, 10vw, 2rem);
+  }
+}
+
+@media (max-width: 646px) {
+  body {
+    background-image: url("./images/mobilebgg.jpg");
+  }
+  .searchbox {
+    width: auto;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .searchbtn,
+  #citybox {
+    width: auto;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #citybox {
+    grid-column: span 3;
+    padding: auto;
+    width: 100%;
+    margin: auto;
+    margin-left: 0.5rem;
+    margin-top: 4.5rem;
+  }
+  .searchbtn {
+    grid-column: span 1;
+    margin-top: 4.5rem;
+    padding: auto;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 590px) {
+  body {
+    background-image: url("./images/mobilebgg.jpg");
+  }
+  .logo {
+    margin-left: 0rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  .navbar {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .navbarlink {
+    width: 100%;
+    display: none;
+  }
+  .navbarlink ul {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbarlink ul li a {
+    padding: 1rem;
+  }
+
+  .ham {
+    display: flex;
+  }
+
+  .navbarlink.active {
+    transition: 0.3s ease-in-out;
+    display: flex;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+  }
+}
